@@ -22,22 +22,26 @@ public class ${table.serviceImplName} extends ${superServiceImplClass}<${table.m
 
     @Override
     public R insert${entity}(${entity}DTO ${entity?uncap_first}Dto) {
-        return null;
+
+        return RUtil.success();
     }
 
     @Override
     public R modify${entity}(${entity}DTO ${entity?uncap_first}Dto) {
-        return null;
+
+        return RUtil.success();
     }
 
     @Override
     public R del${entity}ById(Long id) {
-        return null;
+
+        return RUtil.success();
     }
 
     @Override
     public R<${entity}DTO> select${entity}ById(Long id) {
-        return null;
+
+        return RUtil.success(${entity?uncap_first}DTO);
     }
 
 

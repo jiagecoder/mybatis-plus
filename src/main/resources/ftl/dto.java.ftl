@@ -42,6 +42,7 @@ public class ${entity}DTO implements Serializable {
     </#if>
     @ApiModelProperty(name = "${field.propertyName}",value = "${field.comment}")
     private ${field.propertyType} ${field.propertyName};
+
 </#list>
 <#------------  END 字段循环遍历  ---------->
 
